@@ -1,0 +1,1 @@
+import"./lang-switcher-ac477f7e.js";import{S as e,A as i,N as s}from"./gallery-sect-db3f7ba4.js";e.use([i,s]);new e("#team-swiper",{loop:!0,navigation:{prevEl:"#team-swiper .swiper-button-prev",nextEl:"#team-swiper .swiper-button-next"},spaceBetween:26,slidesPerView:"auto",breakpoints:{576:{slidesPerView:2},768:{slidesPerView:3},992:{slidesPerView:4}}});

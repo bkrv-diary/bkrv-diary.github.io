@@ -1,0 +1,1 @@
+import"./lang-switcher-ac477f7e.js";import"./gallery-sect-db3f7ba4.js";window.addEventListener("load",()=>{document.querySelectorAll(".active-badge").forEach(e=>{e.addEventListener("click",()=>{e.classList.toggle("active")})})});

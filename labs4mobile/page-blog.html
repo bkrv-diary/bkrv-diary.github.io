@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1" />
+    <title>Страница статьи | lab4mobile</title>
+
+    <meta name="description" content="Place the meta description text here." />
+    <meta name=”robots” content="index, follow" />
+
+
+    <meta name="keywords" content="html, css, javascript, vue.js, aos, gsap">
+    <meta name="author" content="Ilya Bakirov | tg: @toomoresouls | email: bkrv.working.diary@gmail.com">
+
+  <script type="module" crossorigin src="assets/pBlog-79cfab07.js"></script>
+  <link rel="modulepreload" href="assets/lang-switcher-ac477f7e.js">
+  <link rel="modulepreload" href="assets/gallery-sect-db3f7ba4.js">
+  <link rel="stylesheet" href="assets/gallery-sect-7421b4fa.css">
+  <link rel="stylesheet" href="assets/pBlog-c33a75e6.css">
+</head>
+
+<body>
+
+    <header id="header" class="header">
+        <div class="header__prepend">
+            <div class="container">
+                <div class="header__prepend-row">
+                    <div class="header__prepend-column">
+                        <span class="header__prepend-text">Свяжитесь с нами:</span>
+                        <a href="#" target="_blank" class="btn btn_small blue header__prepend-btn">
+                            <svg class="mobile" width="17" height="16" viewBox="0 0 17 16" fill="currentFill"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_801_133)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M12.756 15.1861C12.9707 15.3381 13.2474 15.3761 13.494 15.2828C13.7407 15.1888 13.922 14.9781 13.9767 14.7228C14.556 12.0001 15.9614 5.10877 16.4887 2.6321C16.5287 2.44543 16.462 2.25143 16.3154 2.12677C16.1687 2.0021 15.9654 1.9661 15.784 2.03343C12.9887 3.0681 4.38002 6.2981 0.861354 7.6001C0.638021 7.68277 0.492688 7.89743 0.500021 8.13277C0.508021 8.36877 0.666688 8.57343 0.895354 8.6421C2.47335 9.1141 4.54469 9.77077 4.54469 9.77077C4.54469 9.77077 5.51269 12.6941 6.01735 14.1808C6.08069 14.3674 6.22669 14.5141 6.41935 14.5648C6.61135 14.6148 6.81669 14.5621 6.96002 14.4268C7.77069 13.6614 9.02402 12.4781 9.02402 12.4781C9.02402 12.4781 11.4054 14.2241 12.756 15.1861V15.1861ZM5.41602 9.40143L6.53535 13.0934L6.78402 10.7554C6.78402 10.7554 11.1087 6.85477 13.574 4.63143C13.646 4.5661 13.656 4.45677 13.596 4.3801C13.5367 4.30343 13.4274 4.28543 13.3454 4.33743C10.488 6.1621 5.41602 9.40143 5.41602 9.40143Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_801_133">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span class="desktop">Telegram</span></a>
+                        <a href="#" target="_blank" class="btn btn_small green header__prepend-btn">
+                            <svg class="mobile" width="17" height="16" viewBox="0 0 17 16" fill="currentFill"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_801_136)">
+                                    <path
+                                        d="M12.3392 9.19371C12.3081 9.17875 11.1416 8.60436 10.9344 8.52976C10.8497 8.49937 10.7591 8.46971 10.6627 8.46971C10.5052 8.46971 10.3728 8.5482 10.2698 8.70238C10.1533 8.87558 9.80053 9.28789 9.69155 9.41106C9.67731 9.42732 9.65788 9.44675 9.64625 9.44675C9.63581 9.44675 9.45529 9.37241 9.40064 9.34867C8.14937 8.80514 7.1996 7.49807 7.06937 7.27766C7.05077 7.24597 7.04999 7.23158 7.04983 7.23158C7.05441 7.2148 7.09648 7.17262 7.1182 7.15085C7.18173 7.088 7.25056 7.00514 7.31716 6.92498C7.34869 6.88701 7.38028 6.84898 7.41129 6.81314C7.50791 6.70072 7.55092 6.61345 7.60079 6.51236L7.62692 6.45984C7.74869 6.21792 7.64469 6.01376 7.61108 5.94784C7.5835 5.89267 7.09098 4.704 7.03861 4.57911C6.91269 4.27776 6.7463 4.13745 6.51508 4.13745C6.49363 4.13745 6.51508 4.13745 6.42511 4.14124C6.31555 4.14587 5.71893 4.22441 5.45513 4.3907C5.17539 4.56706 4.70215 5.12924 4.70215 6.11792C4.70215 7.00774 5.26682 7.84789 5.50926 8.16742C5.51529 8.17548 5.52636 8.19184 5.54241 8.21532C6.47087 9.57127 7.62833 10.5761 8.80168 11.0449C9.93129 11.4961 10.4662 11.5483 10.7703 11.5483C10.7703 11.5483 10.7704 11.5483 10.7704 11.5483C10.8981 11.5483 11.0004 11.5382 11.0907 11.5293L11.1479 11.5239C11.5381 11.4893 12.3957 11.0449 12.5908 10.5029C12.7444 10.0759 12.7849 9.6094 12.6827 9.4401C12.6127 9.32498 12.492 9.26706 12.3392 9.19371Z" />
+                                    <path
+                                        d="M8.64202 0C4.30872 0 0.783313 3.49891 0.783313 7.79964C0.783313 9.19065 1.15557 10.5523 1.86077 11.7439L0.511001 15.7255C0.485858 15.7997 0.504559 15.8818 0.559468 15.9377C0.599105 15.9782 0.652871 16 0.70778 16C0.728819 16 0.750014 15.9968 0.770689 15.9902L4.92238 14.671C6.05849 15.278 7.34254 15.5984 8.64207 15.5984C12.975 15.5984 16.5 12.0999 16.5 7.79964C16.5 3.49891 12.975 0 8.64202 0ZM8.64202 13.9737C7.41921 13.9737 6.23485 13.6206 5.21677 12.9526C5.18254 12.9301 5.1428 12.9185 5.1028 12.9185C5.08165 12.9185 5.06046 12.9218 5.03984 12.9283L2.96009 13.5894L3.63147 11.6087C3.65318 11.5446 3.64233 11.4739 3.60233 11.4192C2.82705 10.3599 2.41724 9.10831 2.41724 7.79964C2.41724 4.39481 5.20965 1.62473 8.64197 1.62473C12.0739 1.62473 14.866 4.39481 14.866 7.79964C14.866 11.2041 12.074 13.9737 8.64202 13.9737Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_801_136">
+                                        <rect width="16" height="16" fill="white" transform="translate(0.5)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            <span class="desktop">WhatsApp</span></a>
+                    </div>
+                    <div class="header__prepend-column">
+                        <span id="burger-mail" class="header__prepend-text">info@lab4mobile.ru</span>
+                        <button class="btn header__prepend-mbtn">Обратный звонок</button>
+                        <div id="lang-switcher" class="lang-switcher">
+                            <div class="lang-switcher__wrapper">
+                                <span id="ru" data-short="РУС" class="lang-switcher__item active">РУССКИЙ</span>
+                                <span id="en" data-short="ENG" class="lang-switcher__item">ENGLISH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__column">
+                    <div class="logo">
+                        <a href="./index.html" class="logo__link">
+                            <img src="assets/logo-99ea8727.svg" alt="logo" class="logo__picture">
+                            <p class="logo__slogan">Международная
+                                Digital-компания</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="header__column header__column_stretch">
+                    <nav class="navbar burger burger-default header__navbar" id="navbar">
+                        <div id="navbar-content" class="navbar__content">
+                            <span id="navbar-overflow" class="navbar__overflow"></span>
+                            <ul id="navbar-list" class="navbar__list">
+                                <li class="navbar__list-item">
+                                    <a href="./index.html" class="navbar__list-link">Главная</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="./about.html" class="navbar__list-link">О компании</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="./services.html" class="navbar__list-link">Услуги</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="./cases.html" class="navbar__list-link">Кейсы</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="./blog.html" class="navbar__list-link">База знаний</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="./vacancy.html" class="navbar__list-link">Вакансии</a>
+                                </li>
+                                <li class="navbar__list-item">
+                                    <a href="./contacts.html" class="navbar__list-link">Контакты</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button class="burger__switcher" id="burger-switcher">
+                            <span class="icon-switcher"></span>
+                            <span class="icon-switcher"></span>
+                            <span class="icon-switcher"></span>
+                        </button>
+                        <a id="phone-link" href="tel:79454141837" class="header__phone-link">+7 495 414 18 37</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs__wrapper">
+                    <a href="" class="breadcrumbs__link">Главная</a>
+                    <span class="breadcrumbs__hr">/</span>
+                    <a href="./blog.html" class="breadcrumbs__link">База знаний</a>
+                    <span class="breadcrumbs__hr">/</span>
+                    <span class="breadcrumbs__current">Анализ и внедрение CRM Битрикс24 в крупные бизнес-процессы</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="section hero">
+            <div class="container">
+                <div class="hero__banner">
+                    <div class="hero__banner-wrapper">
+                        <div class="hero__banner-info">
+                            <div class="hero__banner-info-item">
+                                <img src="assets/calendar-icon-df105fe6.svg" alt="" class="hero__banner-info-img">
+                                <p class="hero__banner-info-text">12.02.2022</p>
+                            </div>
+                            <div class="hero__banner-info-item">
+                                <img src="assets/book-icon-765f4341.svg" alt="" class="hero__banner-info-img">
+                                <p class="hero__banner-info-text">3 минуты</p>
+                            </div>
+                        </div>
+                        <p class="hero__banner-title">Современные инструменты для разработки интеграций в новом 2022
+                            году</p>
+                        <div class="hero__banner-marks">
+                            <a href="" class="hero__banner-marks-item">Бизнес-процессы</a>
+                            <a href="" class="hero__banner-marks-item">Интеграция</a>
+                            <a href="" class="hero__banner-marks-item">Разработка</a>
+                        </div>
+                    </div>
+                    <img src="assets/page-blog-glass-back-img-9c54e699.png" alt="" class="hero__banner-img">
+                </div>
+                <div class="hero__row">
+                    <div class="person-label person-label_small">
+                        <div class="person-label__glass">
+                            <img src="assets/person2-0037d04d.png" alt="" class="person-label__img">
+                        </div>
+                        <div class="person-label__field">
+                            <p class="person-label__additional">Автор статьи</p>
+                            <p class="person-label__name">Глеб Антоненко</p>
+                        </div>
+                    </div>
+                    <div class="hero__share">
+                        <div class="hero__share-text">Поделиться статьей:</div>
+                        <div class="hero__share-links">
+                            <a href="#" target="_blank" class="link-social-icon vk">
+                                <img src="assets/vk-big-icon-17833bad.svg" alt="" class="link-social-icon__img">
+                            </a>
+                            <a href="#" target="_blank" class="link-social-icon tg">
+                                <img src="assets/tg-big-icon-7787718f.svg" alt="" class="link-social-icon__img">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+
+        <section class="section post">
+            <div class="container">
+                <div id="post-grid" class="post__grid">
+                    <div class="post__content">
+                        <div class="paragraph-field">
+                            <h1 id="h1" class="paragraph-h1">С чего стоит начать анализ?</h1>
+                            <p class="paragraph-text">Компания специализируется на разработке и производстве садовых и
+                                хозяйственных товаров из пластика. Высокая степень автоматизации всех производственных
+                                процессов — визитная карточка и философия предприятия. Это гарантирует постоянно высокое
+                                качество продукции.</p>
+                            <p class="paragraph-text">Таким образом постоянный <span class="sign">количественный
+                                    рост</span> и сфера нашей
+                                активности обеспечивает широкому кругу (специалистов) участие в формировании новых
+                                предложений. Идейные соображения высшего порядка, а также сложившаяся структура
+                                организации в значительной степени обуславливает создание системы обучения кадров,
+                                соответствует насущным потребностям. Повседневная практика показывает, что реализация
+                                намеченных плановых заданий влечет за собой процесс внедрения и модернизации систем
+                                массового участия.</p>
+                        </div>
+                        <div class="paragraph-field">
+                            <h2 id="h11" class="paragraph-h2">С какими трудностями могут столкнуться
+                                UX-исследователи?</h2>
+                            <p class="paragraph-text">С другой стороны дальнейшее развитие различных форм деятельности в
+                                значительной степени обуславливает создание позиций, занимаемых участниками в отношении
+                                поставленных задач. Товарищи! дальнейшее развитие различных форм деятельности
+                                обеспечивает широкому кругу (специалистов) участие в формировании соответствующий
+                                условий активизации.</p>
+                        </div>
+                        <div class="paragraph-field">
+                            <div class="paragraph-img__glass">
+                                <img src="assets/page-blog-1-9e814d4d.png" alt="" class="paragraph-img">
+                                <span class="paragraph-img__desc">UX-исследование и проектирование сценария</span>
+                            </div>
+                        </div>
+                        <div class="paragraph-field">
+                            <h2 id="h12" class="paragraph-h2">Учитываем особенности ниши компании</h2>
+                            <p class="paragraph-text">С другой стороны дальнейшее развитие различных форм деятельности в
+                                значительной степени обуславливает создание позиций, занимаемых участниками в отношении
+                                поставленных задач. Товарищи! дальнейшее развитие различных форм деятельности
+                                обеспечивает широкому кругу (специалистов) участие в формировании соответствующий
+                                условий активизации.</p>
+                            <p class="paragraph-text">Значимость этих проблем настолько очевидна, что сложившаяся
+                                структура организации позволяет выполнять важные задания по разработке дальнейших
+                                направлений развития. Повседневная практика показывает, что сложившаяся структура
+                                организации играет важную роль в формировании системы обучения кадров, соответствует
+                                насущным потребностям.</p>
+                            <h3 class="paragraph-h3">Основные факторы, которые стоит учитывать:</h3>
+                            <ul class="paragraph-list">
+                                <li class="paragraph-list-item">Подготовка ТЗ</li>
+                                <li class="paragraph-list-item">Настройка CRM в Битрикс24.</li>
+                                <li class="paragraph-list-item">Настройка бизнес-процессов в Битрикс24.</li>
+                                <li class="paragraph-list-item">Настройка документооборота в Битрикс24.</li>
+                                <li class="paragraph-list-item">Обучение пользователей.</li>
+                                <li class="paragraph-list-item">В отклике на вакансию обязательно напишите слово манго.
+                                    Так мы поймём, что вы прочитали описание полностью.</li>
+                                <li class="paragraph-list-item">Устранение замечаний Заказчика.</li>
+                            </ul>
+                        </div>
+                        <div class="paragraph-field">
+                            <h1 id="h2" class="paragraph-h1">Этапы создания UserFlow системы</h1>
+                            <p class="paragraph-text">С другой стороны дальнейшее развитие различных форм деятельности в
+                                значительной степени обуславливает создание позиций, занимаемых участниками в отношении
+                                поставленных задач. Товарищи! дальнейшее развитие различных форм деятельности
+                                обеспечивает широкому кругу (специалистов) участие в формировании соответствующий
+                                условий активизации.</p>
+                        </div>
+                        <div class="paragraph-field">
+                            <h2 id="h21" class="paragraph-h2">Таблица совместимости:</h2>
+                            <div class="paragraph-table">
+                                <div class="paragraph-table__thead">
+                                    <div class="paragraph-table__cell">
+                                        <h5 class="paragraph-table__h5">Наименование потребностей</h5>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <h5 class="paragraph-table__h5">Критерий №1</h5>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <h5 class="paragraph-table__h5">Критерий №2</h5>
+                                    </div>
+                                </div>
+                                <div class="paragraph-table__trow">
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">С другой стороны дальнейшее развитие
+                                            различных форм деятельности в значительной </div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 1</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 2</div>
+                                    </div>
+                                </div>
+                                <div class="paragraph-table__trow">
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">С другой стороны дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Товарищи! дальнейшее развитие</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 3</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 4</div>
+                                    </div>
+                                </div>
+                                <div class="paragraph-table__trow">
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">С другой стороны дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач.</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 5</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 6</div>
+                                    </div>
+                                </div>
+                                <div class="paragraph-table__trow">
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Эксплуатация в особых условиях</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 7</div>
+                                    </div>
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__text">Параметр 8</div>
+                                    </div>
+                                </div>
+                                <div class="paragraph-table__tfoot">
+                                    <div class="paragraph-table__cell">
+                                        <div class="paragraph-table__tfoot-text">Вывод о сравнении данных потребностей при ряде двух критериев</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h4 class="paragraph-h4">предпринимаем изменения и корректируем следующее:</h4>
+                            <ol class="paragraph-list paragraph-list_ordered">
+                                <li class="paragraph-list-item">Подготовка ТЗ</li>
+                                <li class="paragraph-list-item">Настройка CRM в Битрикс24.</li>
+                                <li class="paragraph-list-item">Настройка бизнес-процессов в Битрикс24.</li>
+                                <li class="paragraph-list-item">Настройка документооборота в Битрикс24.</li>
+                                <li class="paragraph-list-item">Обучение пользователей.</li>
+                                <li class="paragraph-list-item">В отклике на вакансию обязательно напишите слово манго. Так мы поймём, что вы прочитали описание полностью.</li>
+                                <li class="paragraph-list-item">Устранение замечаний Заказчика.</li>
+                            </ol>
+                        </div>
+                        <div class="paragraph-field">
+                            <h1 class="paragraph-h1">Что об этом говорят специалисты?</h1>
+                            <p class="paragraph-text">С другой стороны дальнейшее развитие различных форм деятельности в значительной степени обуславливает создание позиций, занимаемых участниками в отношении поставленных задач. Товарищи! дальнейшее развитие различных форм деятельности обеспечивает широкому кругу (специалистов) участие в формировании соответствующий условий активизации.</p>
+                            <div class="paragraph-quote">
+                                <p class="paragraph-quote__text">“Значимость этих проблем настолько очевидна, что сложившаяся структура организации позволяет выполнять важные задания по разработке дальнейших направлений развития. Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании системы обучения кадров, соответствует насущным потребностям.”</p>
+                                <div class="paragraph-quote__author">
+                                    <p class="paragraph-quote__author-name">Анатолий Выдвиженский</p>
+                                    <p class="paragraph-quote__author-desc">Проект-менеджер в компании</p>
+                                </div>
+                                <img src="assets/page-blog-quote-71f90af2.svg" alt="" class="paragraph-quote__img">
+                            </div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="post__footer">
+                            <div class="post__footer-nav post__footer-nav-prev">
+                                <img src="assets/post-arrow-prev-78fab2d0.svg" alt="" class="post__footer-nav__icon">
+                                <div class="post__footer-nav__body">
+                                    <p class="post__footer-nav__text">Предыдущая статья</p>
+                                    <a href="#" class="link post__footer-nav__link">Внедрение и разработка систем...</a>
+                                </div>
+                            </div>
+                            <div class="hero__share post__footer-share">
+                                <div class="hero__share-text">Поделиться статьей:</div>
+                                <div class="hero__share-links">
+                                    <a href="#" target="_blank" class="link-social-icon vk">
+                                        <img src="assets/vk-big-icon-17833bad.svg" alt="" class="link-social-icon__img">
+                                    </a>
+                                    <a href="#" target="_blank" class="link-social-icon tg">
+                                        <img src="assets/tg-big-icon-7787718f.svg" alt="" class="link-social-icon__img">
+                                    </a>
+                                    <a href="#" target="_blank" class="link-social-icon fb">
+                                        <img src="assets/fb-big-icon-43c1919f.svg" alt="" class="link-social-icon__img">
+                                    </a>
+                                    <a href="#" target="_blank" class="link-social-icon ig">
+                                        <img src="assets/ig-big-icon-567dd384.svg" alt="" class="link-social-icon__img">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="post__footer-nav post__footer-nav-next">
+                                <img src="assets/post-arrow-next-2366e3f6.svg" alt="" class="post__footer-nav__icon">
+                                <div class="post__footer-nav__body">
+                                    <p class="post__footer-nav__text">Следующая статья</p>
+                                    <a href="#" class="link post__footer-nav__link">Внедрение и разработка систем...</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="post__grid-aside">
+                        <aside id="post-aside" class="post__aside">
+                            <div class="post__aside-title">Содержание:</div>
+                            <nav id="post-nav" class="post__nav">
+                                <ul class="post__nav-list">
+                                    <div class="post__nav-list-title">
+                                        <a href="#h1" data-href="anchor" class="post__nav-list-link">С чего стоит
+                                            начать анализ?</a>
+                                    </div>
+                                    <li class="post__nav-list-item">
+                                        <a href="#h11" data-href="anchor" class="post__nav-list-link">С какими
+                                            трудностями могут столкнуться
+                                            UX-исследователи?</a>
+                                    </li>
+                                    <li class="post__nav-list-item">
+                                        <a href="#h12" data-href="anchor" class="post__nav-list-link">Учитываем
+                                            особенности ниши компании</a>
+                                    </li>
+                                </ul>
+                                <ul class="post__nav-list">
+                                    <div class="post__nav-list-title">
+                                        <a href="#h2" data-href="anchor" class="post__nav-list-link">Этапы создания
+                                            UserFlow системы</a>
+                                    </div>
+                                    <li class="post__nav-list-item">
+                                        <a href="#h21" data-href="anchor" class="post__nav-list-link">Таблица
+                                            совместимости</a>
+                                    </li>
+                                </ul>
+                                <ul class="post__nav-list">
+                                    <div class="post__nav-list-title">
+                                        <a href="#h3" data-href="anchor" class="post__nav-list-link">Что нам об этом
+                                            говорят специалисты?</a>
+                                    </div>
+                                    <li class="post__nav-list-item">
+                                        <a href="#h31" data-href="anchor" class="post__nav-list-link">Слова Анатолия
+                                            Выдвиженского</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section gallery-sect">
+            <div class="container">
+                <div class="flex-row gallery-sect__flex-row">
+                    <h2 class="title gallery-sect__title">Читайте также</h2>
+                    <button class="btn gallery-sect__btn">Показать все статьи</button>
+                </div>
+                <div class="gallery-sect__grid">
+                    <div id="gallery-blog-swiper" class="swiper gallery-sect__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog2-78020f7d.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">01 явнваря 2022</span>
+                                    <h5 class="card-info__title">HR-менеджеры практикуют новые методы хантинга персонала
+                                        для
+                                        компаний</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов? Давайте
+                                        разберемся
+                                        вместе!</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card-info">
+                                <div class="card-info__glass"><img src="assets/blog1-6342dfeb.png" alt=""
+                                        class="card-info__img"></div>
+                                <div class="card-info__body">
+                                    <span class="card-info__label">22 декабря 2021</span>
+                                    <h5 class="card-info__title">Современные проблемы разработки контент-стратегий для
+                                        интернет-магазинов</h5>
+                                    <div class="card-info__text">С чем конкретно сталкивааются контент-менеджеры и
+                                        маркетологи
+                                        при наполнении и администрировании современных интернет-магазинов?</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-btn swiper-button-prev">
+                            <svg width="15" height="8" viewBox="0 0 15 8" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M0.646446 3.64645C0.451184 3.84171 0.451184 4.15829 0.646446 4.35355L3.82843 7.53553C4.02369 7.7308 4.34027 7.7308 4.53553 7.53553C4.7308 7.34027 4.7308 7.02369 4.53553 6.82843L1.70711 4L4.53553 1.17157C4.7308 0.97631 4.7308 0.659727 4.53553 0.464465C4.34027 0.269203 4.02369 0.269203 3.82843 0.464465L0.646446 3.64645ZM15 3.5L1 3.5L1 4.5L15 4.5L15 3.5Z" />
+                            </svg>
+                        </div>
+                        <div class="swiper-btn swiper-button-next">
+                            <svg width="15" height="8" viewBox="0 0 15 8" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.3536 4.35356C14.5488 4.15829 14.5488 3.84171 14.3536 3.64645L11.1716 0.464468C10.9763 0.269206 10.6597 0.269206 10.4645 0.464468C10.2692 0.65973 10.2692 0.976313 10.4645 1.17157L13.2929 4L10.4645 6.82843C10.2692 7.02369 10.2692 7.34027 10.4645 7.53554C10.6597 7.7308 10.9763 7.7308 11.1716 7.53554L14.3536 4.35356ZM-8.74228e-08 4.5L14 4.5L14 3.5L8.74228e-08 3.5L-8.74228e-08 4.5Z" />
+                            </svg>
+                        </div>
+                    </div>
+                    <button class="btn gallery-sect__btn mobile">Показать все cтатьи</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="section inline-form__section">
+            <div class="container">
+                <div class="inline-form">
+                    <div class="inline-form__grid">
+                        <div class="inline-form__aside">
+                            <h2 class="title inline-form__title">
+                                Есть вопросы
+                                <span class="title_newline">или нужно решение</span>
+                                <span class="title_sign"><span class="word-bg">Вашей</span> задачи?</span>
+                            </h2>
+                            <p class="inline-form__text">Оставьте заявку, заполнив форму обратной связи справа. Наш
+                                менеджер свяжется с Вами в самое ближайшее время</p>
+                            <div class="inline-form__footer">
+                                <img src="assets/shield-3c62a019.svg" alt="" class="inline-form__footer-img">
+                                <p class="inline-form__footer-text">Отправляя заявку, будьте уверены, Ваши персональные
+                                    данные под надежной защитой наших специалистов.</p>
+                            </div>
+                        </div>
+                        <form action="" class="inline-form__form">
+                            <input type="text" class="input" placeholder="Как Вас зовут?">
+                            <input type="text" class="input" placeholder="Номер телефона">
+                            <input type="text" class="input" placeholder="E-mail">
+                            <input type="text" class="input" placeholder="Кратко опишите Ваш вопрос">
+                            <label for="my-check" class="checkbox-label inline-form__checkbox-label">
+                                <input type="checkbox" name="my-check" id="my-check" class="checkbox-label__input">
+                                <span class="checkbox-label__box"></span>
+                                <span class="checkbox-label__text">Я соглашаюсь на обработку персональных данных в
+                                    соответствии с <a href="./index.html"
+                                        class="checkbox-label__link">Соглашением</a></span>
+                            </label>
+                            <button class="btn btn_big inline-form__btn">Отправить заявку</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="logo footer__logo">
+                    <a href="./index.html" class="logo__link">
+                        <img src="assets/logo-alt-9986cd68.svg" alt="logo" class="logo__picture">
+                        <p class="logo__slogan logo__slogan_alt">Международная
+                            Digital-компания</p>
+                    </a>
+                </div>
+                <nav class="footer__nav">
+                    <div>
+                        <li class="navbar__list-item">
+                            <a href="./index.html" class="navbar__list-link">Главная</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="./about.html" class="navbar__list-link">О компании</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="./services.html" class="navbar__list-link">Услуги</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="./cases.html" class="navbar__list-link">Кейсы</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="./blog.html" class="navbar__list-link">База знаний</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="./vacancy.html" class="navbar__list-link">Вакансии</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="./contacts.html" class="navbar__list-link">Контакты</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Внедрение и сопровождение Битрикс24</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Разработка и внедрение веб-сервисов</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Системный и бизнес-анализ, построение
+                                архитектуры</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Разработка под Битрикс24</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Разработка интеграций</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Администрирование, техподдержка порталов и
+                                серверов</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Продажа и продление лицензий Битрикс24</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Машинное обучение</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Разработка бизнес-процессов</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Политика конфиденциальности</a>
+                        </li>
+                        <li class="navbar__list-item">
+                            <a href="/" class="navbar__list-link">Политика обработки данных</a>
+                        </li>
+                    </div>
+                </nav>
+                <div class="footer__info">
+                    <div class="footer__body">
+                        <div class="footer__label">Наши контакты:</div>
+                        <a href="tel:79454141837" class="footer__item">
+                            <img src="assets/phone-icon-a2ee6374.svg" alt="" class="footer__item-img">
+                            <p href="" class="header__phone-link footer__phone-link">+7 495 414 18 37</p>
+                        </a>
+                    </div>
+                    <div class="footer__body">
+                        <div class="footer__label">Адрес:</div>
+                        <div class="footer__item">
+                            <img src="assets/mail-icon-9d99bf9e.svg" alt="" class="footer__item-img">
+                            <p class="footer__text-mail">info@lab4mobile.ru</p>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="footer__label">Будьте вместе с нами:</div>
+                        <div class="footer__item">
+                            <img src="assets/mark-icon-210e9c64.svg" alt="" class="footer__item-img">
+                            <p class="footer__text-adress">Москва, Пресненская набережная, 12</p>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <div class="footer__label">Будьте вместе с нами:</div>
+                        <div class="footer__item-flow">
+                            <a href="#" target="_blank" class="link-badge blue">Telegram</a>
+                            <a href="#" target="_blank" class="link-badge green">WhatsApp</a>
+                            <a href="#" target="_blank" class="link-badge black">Яндекс.Дзен</a>
+                            <a href="#" target="_blank" class="link-badge white">TikTok</a>
+                        </div>
+                    </div>
+                    <div class="footer__body">
+                        <a href="https://youtube.com" target="_blank" class="yt-btn">
+                            <img src="assets/yt-icon-87b729a9.svg" alt="" class="yt-btn__img">
+                            <div class="yt-btn__body">
+                                <span class="yt-btn__title">
+                                    Мы на YouTube!
+                                </span>
+                                <span class="yt-btn__text">
+                                    Переходи на наш канал!
+                                </span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__moreover">
+                <p class="footer__moreover__text">Все права защищены. Lab4Mobile. 2022.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+
+    <div id="cookie-pop" class="cookie-pop">
+        <div class="cookie-pop__wrapper">
+            <p class="cookie-pop__text">Мы используем куки. Вы даете нам <a href="./index.html"
+                    class="cookie-pop__link">согласие</a> на их использование?</p>
+            <button id="cookie-pop-submit" class="btn btn_small btn_filled cookie-pop__btn">Согласен</button>
+            <button id="cookie-pop-close" class="btn-close">
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+</body>
+
+</html>
